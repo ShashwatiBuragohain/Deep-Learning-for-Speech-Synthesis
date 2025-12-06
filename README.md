@@ -89,17 +89,14 @@ Stay tuned, and enjoy exploring the whole TTS journey with me:)
 
 ##  Citation
 
-If you use or reference this work, please cite the original Tacotron 2 multispeaker training approach:
-
-**Transfer Learning from Speaker Verification to Multispeaker Text-To-Speech Synthesis**  
-*Ye Jia, Yu Zhang, Ron J. Weiss, Quan Wang, Jonathan Shen, Fei Ren, Zhifeng Chen,  
-Patrick Nguyen, Ruoming Pang, Ignacio Lopez Moreno, Yonghui Wu*
-
-**Cite as:**  
-arXiv:1806.04558 [cs.CL]  
-(or arXiv:1806.04558v4 [cs.CL] for this version)
-
-**DOI:** https://doi.org/10.48550/arXiv.1806.04558
+```bibtex
+@article{jia2018transfer,
+  title={Transfer Learning from Speaker Verification to Multispeaker Text-To-Speech Synthesis},
+  author={Jia, Ye and Zhang, Yu and Weiss, Ron J and Wang, Quan and Shen, Jonathan and Ren, Fei and Chen, Zhifeng and Nguyen, Patrick and Pang, Ruoming and Moreno, Ignacio Lopez and Wu, Yonghui},
+  journal={arXiv preprint arXiv:1806.04558},
+  year={2018},
+  doi={10.48550/arXiv.1806.04558}
+}
 
 ##  Authors & Acknowledgments
 
