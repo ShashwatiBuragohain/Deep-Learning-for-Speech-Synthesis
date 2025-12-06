@@ -1,6 +1,6 @@
 # Deep-Learning-for-Speech-Synthesis
-Welcome to my full speech synthesis pipeline, built completely from scratch — from raw audio all the way to cloned voices.
-This project is basically my attempt to build a full Real-Time Voice Cloning stack , learning every piece along the way.
+Welcome to our full speech synthesis pipeline, built from scratch — from raw audio all the way to cloned voices.
+This project is basically our attempt to build a full Real-Time Voice Cloning stack , learning every piece along the way.
 
 If you're into deep learning or audio stuffs, this repo shows the whole process:
 
@@ -10,7 +10,7 @@ If you're into deep learning or audio stuffs, this repo shows the whole process:
 4. Training HiFi-GAN (turns mels → actual audio)
 5. Putting it all together for voice cloning
    
-Let me break down the whole journey.
+Let us break down the whole journey.
 
 ## Preprocessing
 Before any model learns anything, we need to prepare the data properly.
@@ -83,9 +83,9 @@ However… HiFi-GAN is currently getting stuck during training.
 (Probably a dataloader freeze or GPU memory issue — still debugging.)
 
 So expect updates!
-I’ll keep improving this pipeline, fixing the vocoder, and eventually connecting everything into a final inference script/UI.
+We’ll keep improving this pipeline, fixing the vocoder, and eventually connecting everything into a final inference script/UI.
 
-Stay tuned, and enjoy exploring the whole TTS journey with me:)
+Stay tuned, and enjoy exploring the whole TTS journey with us ;)
 
 ##  Citation
 
