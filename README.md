@@ -1,5 +1,4 @@
 # Deep-Learning-for-Speech-Synthesis
-Design and implementation of a neural text-to-speech system on the LibriTTS dataset by training Tacotron2, exploring model performance, speech quality, and preparing extensions with neural vocoders for naturalistic speech synthesis.
 Welcome to my full speech synthesis pipeline, built completely from scratch — from raw audio all the way to cloned voices.
 This project is basically my attempt to build a full Real-Time Voice Cloning stack , learning every piece along the way.
 
