@@ -10,9 +10,10 @@ If you're into deep learning, audio, or have ever wanted your computer to talk l
 3. Training a TTS model (learns the how to speak)
 4. Training HiFi-GAN (turns mels → actual audio)
 5. Putting it all together for voice cloning
+   
 Let me break down the whole journey.
 
-1. **Preprocessing**
+## Preprocessing
 Before any model learns anything, we need to prepare the data properly.
 This is where the cleaning happens: text cleaning, audio trimming, mel-spectrograms, pitch extraction, the whole vibe.
 This step Loads dataset (LibriTTS-style), Cleans transcripts, Generates all speech features(Mel-spectrograms, Pitch (using YIN), Energy, Builds phonemes (G2P + eSpeak),Computes normalization stats (mel mean/std), Splits speakers into train/validation and then saves everything neatly into folders
@@ -24,7 +25,7 @@ This step sets the foundation for the entire pipeline.
 <img width="1052" height="822" alt="image" src="https://github.com/user-attachments/assets/c8691fc8-3ddc-4395-bd0c-79b0701289b0" />
 
 
- 2. **Speaker Encoder** : “who is speaking?”
+ ## Speaker Encoder** : “who is speaking?”
 
 This model learns the identity of a speaker. It turns small audio clips into embedding vectors that represent the speaker’s voice.
 It help achieve:
@@ -35,7 +36,7 @@ This model only cares about who, not what is being said.
 <img width="973" height="676" alt="image" src="https://github.com/user-attachments/assets/7e696c6c-43c4-4511-9061-c8f605a5f894" />
 
 
- 3. **TTS Model** : turning text → mel spectrograms
+## TTS Model : turning text → mel spectrograms
 
 Now that we know who is talking, it’s time to teach the model how to talk.
 The TTS model takes:
@@ -54,7 +55,7 @@ This is basically the "brain" of the TTS pipeline.
 <img width="1016" height="342" alt="image" src="https://github.com/user-attachments/assets/4a82d978-185c-404a-a31d-485a199b43d6" />
 
 
-4. **HiFi-GAN** : giving the model a REAL voice
+## HiFi-GAN : giving the model a REAL voice
 
 HiFi-GAN is the vocoder — the model that converts the TTS output (mel-spectrogram) into real-sounding audio.
 We can think of it as the final transformation step:
@@ -67,7 +68,7 @@ HiFi-GAN uses a GAN setup with:
 
 The result was expected to be a high-quality, natural-sounding speech, fast.
 
-5. Full Voice Cloning Pipeline
+## Full Voice Cloning Pipeline
 Put everything together:
 
 Text → Phonemes
@@ -97,6 +98,7 @@ Stay tuned, and enjoy exploring the whole TTS journey with me:)
   year={2018},
   doi={10.48550/arXiv.1806.04558}
 }
+```
 
 ##  Authors & Acknowledgments
 
