@@ -25,7 +25,7 @@ This step sets the foundation for the entire pipeline.
 <img width="1052" height="822" alt="image" src="https://github.com/user-attachments/assets/c8691fc8-3ddc-4395-bd0c-79b0701289b0" />
 
 
- ## Speaker Encoder** : “who is speaking?”
+ ## Speaker Encoder : “who is speaking?”
 
 This model learns the identity of a speaker. It turns small audio clips into embedding vectors that represent the speaker’s voice.
 It help achieve:
